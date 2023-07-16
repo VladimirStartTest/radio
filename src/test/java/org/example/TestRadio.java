@@ -341,7 +341,7 @@ public class TestRadio {
         radio.setCurrentVolume(1);
         radio.reduceVolume();
 
-        int expected = 2;
+        int expected = 0;
         int actual = radio.getCurrentVolume();
         Assertions.assertEquals(expected, actual);
     }

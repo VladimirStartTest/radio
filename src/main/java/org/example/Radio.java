@@ -16,7 +16,7 @@ public class Radio {
         if (currentStation > 9) {
             return;
         }
-        this.CurrentStation = currentStation;
+        this.CurrentStation = CurrentStation;
 
     }
 
@@ -24,14 +24,14 @@ public class Radio {
         return CurrentVolume;
     }
 
-    public void setCurrentVolume(int currentVolume) {
+    public void setCurrentVolume(int CurrentVolume) {
         if (CurrentVolume < 0) {
             return;
         }
         if (CurrentVolume > 100) {
             return;
         }
-        this.CurrentVolume = currentVolume;
+        this.CurrentVolume = CurrentVolume;
     }
 
     public void nextStation() {
@@ -51,7 +51,7 @@ public class Radio {
     }
 
     public void increaseVolume() {
-        if (CurrentVolume != 100) {
+        if (CurrentVolume < 100) {
             CurrentVolume++;
         } else {
             CurrentVolume = 100;
@@ -60,7 +60,7 @@ public class Radio {
 
 
     public void reduceVolume() {
-        if (CurrentVolume != 0) {
+        if (CurrentVolume < 100) {
             CurrentVolume--;
         } else {
             CurrentVolume = 0;

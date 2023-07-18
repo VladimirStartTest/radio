@@ -392,7 +392,6 @@ public class TestRadio {
         Radio radio = new Radio();
         radio.setCurrentVolume(200);
 
-
         int expected = 0;
         int actual = radio.getCurrentVolume();
 

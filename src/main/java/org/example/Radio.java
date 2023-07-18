@@ -57,10 +57,6 @@ public class Radio {
         } else {
             CurrentVolume = 100;
         }
-
-
-
-
     }
 
     public void reduceVolume() {

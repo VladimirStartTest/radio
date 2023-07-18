@@ -8,12 +8,12 @@ public class Radio {
         return CurrentStation;
     }
 
-    public void setCurrentStation(int currentStation) {
-        if (currentStation < 0) {
+    public void setCurrentStation(int CurrentStation) {
+        if (CurrentStation < 0) {
 
             return;
         }
-        if (currentStation > 9) {
+        if (CurrentStation > 9) {
             return;
         }
         this.CurrentStation = CurrentStation;
@@ -53,14 +53,18 @@ public class Radio {
     public void increaseVolume() {
         if (CurrentVolume < 100) {
             CurrentVolume++;
+
         } else {
             CurrentVolume = 100;
         }
+
+
+
+
     }
 
-
     public void reduceVolume() {
-        if (CurrentVolume < 100) {
+        if (CurrentVolume > 0) {
             CurrentVolume--;
         } else {
             CurrentVolume = 0;

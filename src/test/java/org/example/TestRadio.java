@@ -374,10 +374,10 @@ public class TestRadio {
 
     @Test
 
-    public void testReduceVolumeMinus() {
+    public void testReduceVolumeMinusFive() {
 
         Radio radio = new Radio();
-        radio.setCurrentVolume(-6);
+        radio.setCurrentVolume(-5);
         radio.reduceVolume();
 
         int expected = 0;
@@ -387,14 +387,15 @@ public class TestRadio {
 
     @Test
 
-    public void testIncreaseVolumeMax100() {
+    public void testIncreaseVolumeTwoHundred() {
 
         Radio radio = new Radio();
-        radio.setCurrentVolume(105);
-        radio.increaseVolume();
+        radio.setCurrentVolume(200);
 
-        int expected = 100;
+
+        int expected = 0;
         int actual = radio.getCurrentVolume();
+
         Assertions.assertEquals(expected, actual);
     }
 }

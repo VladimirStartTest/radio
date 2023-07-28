@@ -8,7 +8,7 @@ public class Radio {
         return currentStation;
     }
 
-    public void setcurrentStation(int CurrentStation) {
+    public void setcurrentStation(int currentStation) {
         if (currentStation < 0) {
 
             return;
@@ -16,7 +16,7 @@ public class Radio {
         if (currentStation > 9) {
             return;
         }
-        this.currentStation = CurrentStation;
+        this.currentStation = currentStation;
 
     }
 

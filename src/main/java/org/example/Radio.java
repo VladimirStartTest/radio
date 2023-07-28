@@ -1,69 +1,69 @@
 package org.example;
 
 public class Radio {
-    private int CurrentStation;
-    private int CurrentVolume;
+    private int currentStation;
+    private int currentVolume;
 
-    public int getCurrentStation() {
-        return CurrentStation;
+    public int getcurrentStation() {
+        return currentStation;
     }
 
-    public void setCurrentStation(int CurrentStation) {
-        if (CurrentStation < 0) {
+    public void setcurrentStation(int CurrentStation) {
+        if (currentStation < 0) {
 
             return;
         }
-        if (CurrentStation > 9) {
+        if (currentStation > 9) {
             return;
         }
-        this.CurrentStation = CurrentStation;
+        this.currentStation = CurrentStation;
 
     }
 
-    public int getCurrentVolume() {
-        return CurrentVolume;
+    public int getcurrentVolume() {
+        return currentVolume;
     }
 
-    public void setCurrentVolume(int CurrentVolume) {
-        if (CurrentVolume < 0) {
+    public void setcurrentVolume(int currentVolume) {
+        if (currentVolume < 0) {
             return;
         }
-        if (CurrentVolume > 100) {
+        if (currentVolume > 100) {
             return;
         }
-        this.CurrentVolume = CurrentVolume;
+        this.currentVolume = currentVolume;
     }
 
     public void nextStation() {
-        if (CurrentStation != 9) {
-            CurrentStation++;
+        if (currentStation != 9) {
+            currentStation++;
         } else {
-            CurrentStation = 0;
+            currentStation = 0;
         }
     }
 
     public void prevStation() {
-        if (CurrentStation != 0) {
-            CurrentStation--;
+        if (currentStation != 0) {
+            currentStation--;
         } else {
-            CurrentStation = 9;
+            currentStation = 9;
         }
     }
 
     public void increaseVolume() {
-        if (CurrentVolume < 100) {
-            CurrentVolume++;
+        if (currentVolume < 100) {
+            currentVolume++;
 
         } else {
-            CurrentVolume = 100;
+            currentVolume = 100;
         }
     }
 
     public void reduceVolume() {
-        if (CurrentVolume > 0) {
-            CurrentVolume--;
+        if (currentVolume > 0) {
+            currentVolume--;
         } else {
-            CurrentVolume = 0;
+            currentVolume = 0;
         }
     }
 }
